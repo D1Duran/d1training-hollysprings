@@ -226,12 +226,12 @@ $('lead-form').addEventListener('submit',async function(e){
   const payload={
     location:'Holly Springs',
     timestamp:new Date().toISOString(),
-    firstName,
-    lastName:$('lastName').value.trim(),
+    first_name:firstName,
+    last_name:$('lastName').value.trim(),
     phone:$('phone').value.trim(),
     email,
     zip:$('zip').value.trim(),
-    training,
+    training_for:training,
     goal:$('goal').value,
     source:$('source').value,
   };
